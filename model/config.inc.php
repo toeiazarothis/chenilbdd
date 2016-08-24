@@ -1,8 +1,8 @@
 <?php
-define('USER', )
-define('PASS', )
+define('USER', 'patrick' )
+define('PASS', 'motsdepasse')
 
  ?>
 
 
-insert pour rajouter chien dans la BDD 
+insert pour rajouter chien dans la BDD
