@@ -22,7 +22,10 @@
 
 
     <!--Custom de la police d'ecriture-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
      <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -36,7 +39,7 @@
     <![endif]-->
   </head>
 
-  <body>
+<body id="page-top" class="index">
 
       <!-- Navigation -->
       <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -74,34 +77,33 @@
                 <div class="intro-lead-in">Bonjour, bienvenue!</div>
                 <div class="intro-heading"><p>Vous etes le bienvenue sur le site du chenil du chien fumant. Le seul chenil ou les chien sont libre de fumer.<br>
                   Un lieu unique en son genre.</p>
-                <a href="#listedechien" class="page-scroll btn btn-xl">Decouvrez nos pensionaires</a>
+                <a href="#information" class="page-scroll btn btn-xl">Decouvrez nos pensionaires</a>
             </div>
         </div>
     </header>
-
-<section id="listedechien">
+    <section id="information">
     <div class="container">
       <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-7">
-          <h2>Nos Pensionaires</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-
-
-        <div class="col-md-3 col-md-offset-2">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p>
-            <div class="row">
-              <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Ajouter un chien"><button type="button" class="btn btn-success">OK</button>
-              </div>
+        <div class="row">
+            <div class="col-md-6">
+              <h2>Nos Pensionaires</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div>
-            <!--<input type="text" class="form-control" placeholder="Text input"><a class="btn btn-default" href="#" role="button">Ajout &raquo;</a>--></p>
-       </div>
-      </div>
+
+
+            <div class="col-md-4 col-md-offset-2">
+              <h2>Ajouter votre chien</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p>
+                <div class="row">
+                    <input type="text" class="form-control" placeholder="Ajouter un chien">
+                    <button type="button" class="btn btn-success">OK</button>
+                </div>
+                <!--<input type="text" class="form-control" placeholder="Text input"><a class="btn btn-default" href="#" role="button">Ajout &raquo;</a>--></p>
+            </div>
+        </div>
+    </section>
 
       <hr>
 
