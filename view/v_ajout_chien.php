@@ -1,5 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
 <?php
-include('../modele/m_accueil.php');
 ajoutChiens();
 ?>
-<a href="v_accueil.php">Revenir à l'accueil</a>
+<a href="c_accueil.php">Revenir à l'accueil</a>
+</body>
+</html>

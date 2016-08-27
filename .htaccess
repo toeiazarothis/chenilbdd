@@ -1,0 +1,4 @@
+AuthUserFile /home/u852249137/public_html/chenilbdd/controller/.htpasswd
+AuthName "Accès protégé"
+AuthType Basic
+Require valid-user
