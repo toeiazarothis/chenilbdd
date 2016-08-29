@@ -97,7 +97,7 @@
               <div class="col-lg-10 col-md-offset-1 text-center">
               <h2>Nos Pensionaires</h2><br>
               <p>Voici une liste des chiens actuellement en notre compagnie. Cette liste est automatiquement mise a jour par notre systeme informatique.</p><br>
-                <select name="suprnom">
+                <select name="suprnom" class="form-control">
                   <?php
                   $liste_chiens = listeMoiLesChiens();
                   foreach ($liste_chiens as $value) {
@@ -106,7 +106,6 @@
                   }
                   ?>
                 </select><br>
-              </form>
               </div>
             </div>
           </div>
@@ -121,13 +120,14 @@
                       </p><br>
                       <p>
                       <div class="row">
-                        <form action="c_ajout_chien.php" method="post">
-                          <input type="text" required name="nom" placeholder="Entrer un chien">
-                          <input type="text" required name="race" placeholder="Entrer une race">
-                          <input type="text" required name="sexe" placeholder="Entrer le sexe du chien">
-                          <input class="btn btn-default"type="submit" name="submit" value="Ajouter le chien">
-                          <!-- <input type="submit" name="submit" value="Ajouter le chien"> -->
-                        </form><br>
+                        <div class="col-lg-4 col-md-offset-4 text-center">
+                          <form action="c_ajout_chien.php" method="post">
+                            <input type="text" class="form-control" required name="nom" placeholder="Entrer un chien">
+                            <input type="text" class="form-control" required name="race" placeholder="Entrer une race">
+                            <input type="text" class="form-control" required name="sexe" placeholder="Entrer le sexe du chien">
+                            <input class="btn btn-default"type="submit" name="submit" value="Ajouter le chien">
+                          </form><br>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -141,23 +141,25 @@
                       <h2>Modification de profil</h2><br>
                       <p>Grace a notre nouveau systeme vous avez la possiblité de modifier votre profil a distance sans pour autant avoir besoin de vous deplacer dans les contré de Yomi.<br>Pour ce faire, rien de plus simple, il vous suffit de remplir le formulaire ci dessous.<br><br>
                       </p>
-                      <form action="c_modif_pro.php" method="post">
-                        <select name="modifpro">
-                          <?php
-                          $liste_pro = listeMoiLesPro();
-                          foreach ($liste_pro as $value) {
-                            echo
-                            '<option value ='.$value['code_pro'].'>'.$value['nom_pro'].'</option>';
-                          }
-                           ?>
-                        </select>
-                        <input type="text" name="nompro" placeholder="Ex:Jean">
-                        <input type="text" name="tel" placeholder="Ex:06.56.67.90.07">
-                        <input type="text" name="rue" placeholder="Ex:12 rue de la poupé qui tousse"><br>
-                        <input type="text" name="ville" placeholder="Ex:Troyes">
-                        <input type="text" name="cp" placeholder="Ex:10000">
-                        <input type="submit" name="submit" value="Modifier les infos">
-                      </form><br>
+                      <div class="col-lg-4 col-md-offset-4 text-center">
+                        <form action="c_modif_pro.php" method="post">
+                          <select name="modifpro" class="form-control">
+                            <?php
+                            $liste_pro = listeMoiLesPro();
+                            foreach ($liste_pro as $value) {
+                              echo
+                              '<option value ='.$value['code_pro'].'>'.$value['nom_pro'].'</option>';
+                            }
+                             ?>
+                          </select>
+                          <input type="text" class="form-control" name="nompro" placeholder="Ex:Jean">
+                          <input type="text" class="form-control" name="tel" placeholder="Ex:06.56.67.90.07">
+                          <input type="text" class="form-control" name="rue" placeholder="Ex:12 rue de la poupé qui tousse"><br>
+                          <input type="text" class="form-control" name="ville" placeholder="Ex:Troyes">
+                          <input type="text" class="form-control" name="cp" placeholder="Ex:10000">
+                          <input class="btn btn-default"type="submit" name="submit" value="Modifier les infos">
+                        </form><br>
+                      </div>
                     </div>
                 <!--<input type="text" class="form-control" placeholder="Text input"><a class="btn btn-default" href="#" role="button">Ajout &raquo;</a>--></p>
                 </div>
@@ -170,18 +172,20 @@
                   <div class="col-lg-10 col-md-offset-1 text-center">
                   <h2>Recuperer votre animal</h2><br>
                   <p>Vous avez la possibilité de recuperer votre chien en nous prevenant a l'avance. Afin de proteger les chiens ainsi que les membres de l'equipe il vous sera demander de vous munir d'un document prouvant votre identité et egalement de laisser votre vehicule sur le parking prevue a cette effet. </p><br><br>
-                  <form action="c_supr_chien.php" method="post">
-                    <select name="suprnom">
-                      <?php
-                      $liste_chiens = listeMoiLesChiens();
-                      foreach ($liste_chiens as $value) {
-                        echo
-                        "<option>".$value['nom_ch']."</option>";
-                      }
-                      ?>
-                    </select>
-                    <input type="submit" name="submit" value="Supprimer le chien">
-                  </form>
+                  <div class="col-lg-4 col-md-offset-4 text-center">
+                    <form action="c_supr_chien.php" method="post">
+                      <select name="suprnom" class="form-control">
+                        <?php
+                        $liste_chiens = listeMoiLesChiens();
+                        foreach ($liste_chiens as $value) {
+                          echo
+                          "<option>".$value['nom_ch']."</option>";
+                        }
+                        ?>
+                      </select>
+                      <input class="btn btn-default"type="submit" name="submit" value="Supprimer le chien">
+                    </form>
+                  </div>
                   </div>
                 </div>
               </div>
