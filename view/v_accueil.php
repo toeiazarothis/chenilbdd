@@ -97,6 +97,7 @@
               <div class="col-lg-10 col-md-offset-1 text-center">
               <h2>Nos Pensionaires</h2><br>
               <p>Voici une liste des chiens actuellement en notre compagnie. Cette liste est automatiquement mise a jour par notre systeme informatique.</p><br>
+              <div class="col-lg-4 col-md-offset-4 text-center">
                 <select name="suprnom" class="form-control">
                   <?php
                   $liste_chiens = listeMoiLesChiens();
@@ -106,6 +107,7 @@
                   }
                   ?>
                 </select><br>
+              </div>
               </div>
             </div>
           </div>

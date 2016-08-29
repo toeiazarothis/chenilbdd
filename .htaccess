@@ -1,4 +1,6 @@
-AuthUserFile /home/u852249137/public_html/chenilbdd/controller/.htpasswd
-AuthName "Accès protégé"
-AuthType Basic
-Require valid-user
+RewriteBase /home/u852249137/public_html/chenilbdd/
+Options +FollowSymlinks
+
+#Règles
+RewriteEngine On
+RewriteRule ^$ controller/c_accueil.php [L]
